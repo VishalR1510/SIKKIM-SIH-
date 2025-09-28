@@ -9,10 +9,6 @@ const LANGUAGES = [
   { code: 'it', label: 'Italian', audio: 'src/assets/rumtek-audio-it.mp3' },
   { code: 'jap', label: 'Japanese', audio: 'src/assets/rumtek-audio-jap.mp3' },
   { code: 'sp', label: 'Spanish', audio: 'src/assets/rumtek-audio-sp.mp3' },
-  { code: 'tl', label: 'Telugu', audio: 'src/assets/rumtek-audio-tl.mp3' },
-  { code: 'ta', label: 'Tamil', audio: 'src/assets/rumtek-audio-ta.mp3' },
-  { code: 'mal', label: 'Malayalam', audio: 'src/assets/rumtek-audio-mal.mp3' },
-  { code: 'hi', label: 'Hindi', audio: 'src/assets/rumtek-audio-hi.mp3' },
 ];
 
 const RumtekWalkthrough: React.FC = () => {

@@ -8,8 +8,6 @@ import {
   Play, Pause, SkipForward, SkipBack, Volume2, VolumeX, 
   Globe, MapPin, Clock, Users, BookOpen, Mic 
 } from 'lucide-react';
-import { useAppContext } from '@/context/AppContext';
-import NarratedWalkthroughModal from '@/components/modals/NarratedWalkthroughModal';
 
 interface WalkthroughStep {
   id: string;
@@ -44,8 +42,6 @@ interface NarratedWalkthrough {
 
 const NarratedWalkthroughs: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const { setSelectedMonastery } = useAppContext();
 
   const walkthroughs: NarratedWalkthrough[] = [
     {
@@ -151,22 +147,6 @@ const NarratedWalkthroughs: React.FC = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const handleExploreNow = (walkthrough: NarratedWalkthrough) => {
-    // Set the selected monastery for Rumtek
-    if (walkthrough.id === 'rumtek-heritage') {
-      setSelectedMonastery({
-        id: '1',
-        name: 'Rumtek Monastery',
-        location: 'Gangtok, Sikkim',
-        description: walkthrough.description,
-        image: walkthrough.coverImage,
-        features: ['360° Virtual Tour', 'Audio Guide', 'Historical Artifacts', 'Narrated Walkthrough'],
-        coordinates: [27.3314, 88.5605]
-      });
-      setIsModalOpen(true);
-    }
-  };
-
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
       case 'Easy': return 'bg-green-100 text-green-800';
@@ -253,7 +233,6 @@ const NarratedWalkthroughs: React.FC = () => {
                   </div>
                   <div className="absolute left-0 bottom-0 w-full px-6 pb-6">
                     <Button 
-                      onClick={() => handleExploreNow(walkthrough)}
                       className="w-full bg-monastery-gold text-black font-semibold rounded-full shadow-lg hover:bg-yellow-400 focus:ring-2 focus:ring-yellow-300 focus:outline-none transition-all duration-200 border-2 border-monastery-gold"
                     >
                       <Play className="w-4 h-4 mr-2" />
@@ -265,12 +244,6 @@ const NarratedWalkthroughs: React.FC = () => {
           ))}
         </div>
       </div>
-
-      {/* Narrated Walkthrough Modal */}
-      <NarratedWalkthroughModal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
     </div>
   );
 };
