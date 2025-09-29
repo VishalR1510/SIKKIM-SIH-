@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
               <span className="px-1 text-monastery-gold/80">Privacy Policy</span>.
             </p>
             <a
-              href="#" /* TODO: replace with provided link */
+              href="https://sikkimtourism.gov.in/Public/Index/Helpline" /* TODO: replace with provided link */
               className="inline-block text-sm text-red-300 hover:text-red-400 underline underline-offset-4"
             >
               Emergency contact

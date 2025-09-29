@@ -123,14 +123,14 @@ const JewelSikkim: React.FC = () => {
 
           {/* Craftsmanship Information */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border-transparent">
               <h4 className="text-lg font-bold text-monastery-gold mb-3">Sacred Jewellery</h4>
               <p className="text-slate-300 text-sm">
                 Religious pieces like Khao pendants and blessed amulets serve as spiritual protection, 
                 often crafted by skilled artisans following ancient traditions.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border-transparent">
               <h4 className="text-lg font-bold text-monastery-gold mb-3">Cultural Heritage</h4>
               <p className="text-slate-300 text-sm">
                 Traditional pieces like Yencho and Naugedi represent cultural identity, 

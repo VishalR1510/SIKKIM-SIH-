@@ -137,14 +137,14 @@ const DanceSikkim: React.FC = () => {
 
           {/* Performance Information */}
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border-transparent">
               <h4 className="text-lg font-bold text-monastery-gold mb-3">Sacred Dances</h4>
               <p className="text-slate-300 text-sm">
                 Monastic dances like Chham, Kagyed, and Chutkay are performed during religious festivals, 
                 serving as both spiritual practice and community celebration.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-slate-900/50 to-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+            <div className="bg-black/60 backdrop-blur-sm rounded-xl p-6 border-transparent">
               <h4 className="text-lg font-bold text-monastery-gold mb-3">Folk Traditions</h4>
               <p className="text-slate-300 text-sm">
                 Community dances like Maruni, Tamang Selo, and Limboo bring people together, 

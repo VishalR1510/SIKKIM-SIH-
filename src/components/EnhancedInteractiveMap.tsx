@@ -47,7 +47,6 @@ const EnhancedInteractiveMap: React.FC = () => {
   const [activeView, setActiveView] = useState('map');
   const [showDirections, setShowDirections] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
-  // Enchey Monastery coordinates (Gangtok, Sikkim): 27.3456° N, 88.6131° E
   const ENCHEY_MONASTERY: [number, number] = [27.3456, 88.6131];
   const [directions, setDirections] = useState(null);
   const [directionsLoading, setDirectionsLoading] = useState(false);
@@ -479,7 +478,7 @@ const EnhancedInteractiveMap: React.FC = () => {
           </TabsContent>
 
           <TabsContent value="nearby">
-            <Card className="bg-black/70 border-none shadow-xl backdrop-blur-lg rounded-2xl mt-8">
+            <Card className="bg-black/60 border-none shadow-xl backdrop-blur-lg rounded-2xl mt-8">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-monastery-gold">
                   <Compass className="w-5 h-5 text-monastery-gold" />

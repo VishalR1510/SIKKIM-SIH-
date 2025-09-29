@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutSikkim: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black text-white px-4 md:px-8 py-12 md:py-16">
+    <div className="min-h-screen bg-gradient-to-b from-black via-slate-900 to-black text-white px-4 md:px-8 py-12 md:py-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           <div>
