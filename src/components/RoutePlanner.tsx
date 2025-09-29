@@ -307,7 +307,6 @@ const RoutePlanner: React.FC = () => {
                         <option value="car">Private Car</option>
                         <option value="bus">Public Bus</option>
                         <option value="taxi">Shared Taxi</option>
-                        <option value="flight">Helicopter</option>
                       </select>
                     </div>
 

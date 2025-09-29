@@ -14,7 +14,7 @@ const tours = [
     id: 2,
     name: "Pemayangtse Monastery",
     description: "A 360° virtual tour of Pemayangtse Monastery.",
-    image: "/src/assets/pemayangtse-monastery-360.jpg",
+  image: "/src/assets/pemayangtse-monastery.jpg",
     type: "360",
     duration: "10 min",
     languages: ["English", "Hindi"],
