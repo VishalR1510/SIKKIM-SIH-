@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AboutSikkim from "./components/AboutSikkim";
 import FoodSikkim from "./components/FoodSikkim";
+import InteractiveMap from "./components/InteractiveMap";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about-sikkim" element={<AboutSikkim />} />
           <Route path="/foods" element={<FoodSikkim />} />
+          <Route path="/interactive-map" element={<InteractiveMap />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
