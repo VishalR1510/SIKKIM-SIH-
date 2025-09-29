@@ -19,6 +19,7 @@ import DanceSikkim from '@/components/DanceSikkim';
 import JewelSikkim from '@/components/JewelSikkim';
 import LanguageSikkim from '@/components/LanguageSikkim';
 import InstrumentSikkim from '@/components/InstrumentSikkim';
+import Footer from '@/components/Footer';
 
 const AppContent: React.FC = () => {
   const { state } = useAppContext();
@@ -67,6 +68,7 @@ const AppContent: React.FC = () => {
       <main>
         {renderCurrentView()}
       </main>
+      <Footer />
     </div>
   );
 };

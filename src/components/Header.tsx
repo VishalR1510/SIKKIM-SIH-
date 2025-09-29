@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   ];
 
   const aboutDropdownItems = [
-    { label: 'About Sikkim', view: 'about-sikkim' as const },
+    { label: 'Districts in Sikkim', view: 'about-sikkim' as const },
     { label: 'Foods', view: 'foods' as const },
     { label: 'Dance', view: 'dance' as const },
     { label: 'Jewellery', view: 'jewellery' as const },
